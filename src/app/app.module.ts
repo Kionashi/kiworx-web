@@ -1,15 +1,25 @@
-import { ServerComponent } from './server/server.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { ServersComponent } from './servers/servers.component';
-import { MenuComponent } from './menu/menu.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FormComponent } from './form/form.component';
+import { NewsletterComponent } from './newsletter/newsletter.component';
+import { CardsRowComponent } from './cards-row/cards-row.component';
+import { CardComponent } from './card/card.component';
+import { SliderComponent } from './slider/slider.component';
+import { ListComponent } from './list/list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenuComponent,
+    NavbarComponent,
+    FormComponent,
+    NewsletterComponent,
+    CardsRowComponent,
+    CardComponent,
+    SliderComponent,
+    ListComponent,
   ],
   imports: [
     BrowserModule
