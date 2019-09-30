@@ -29,9 +29,18 @@
               "resources/2095_level/slick/slick.css",
               "resources/2095_level/slick/slick-theme.css",
               "resources/2095_level/css/tooplate-style.css",
+              "resources/2095_level/css/datepicker.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "resources/2095_level/js/jquery-1.11.3.min.js",
+              "resources/2095_level/js/popper.min.js",
+              "resources/2095_level/js/bootstrap.min.js",
+              "resources/2095_level/js/datepicker.min.js",
+              "resources/2095_level/js/jquery.singlePageNav.min.js",
+              "resources/2095_level/slick/slick.min.js",
+              "src/custom.js"
+            ]
           },
           "configurations": {
             "production": {

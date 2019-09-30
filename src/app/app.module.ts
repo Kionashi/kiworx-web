@@ -9,6 +9,9 @@ import { CardsRowComponent } from './cards-row/cards-row.component';
 import { CardComponent } from './card/card.component';
 import { SliderComponent } from './slider/slider.component';
 import { ListComponent } from './list/list.component';
+import { TitledListComponent } from './titled-list/titled-list.component';
+import { MapComponent } from './map/map.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +23,9 @@ import { ListComponent } from './list/list.component';
     CardComponent,
     SliderComponent,
     ListComponent,
+    TitledListComponent,
+    MapComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule
