@@ -6,10 +6,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./form.component.css']
 })
 export class FormComponent implements OnInit {
-
-  constructor() { }
+  buttonLabel = 'Check Availability';
+  constructor() { 
+     
+  }
 
   ngOnInit() {
+  }
+
+  onCheckAvailability(){
+    if(this.buttonLabel === 'Check Availability'){
+
+      alert('connect to the API');
+      this.buttonLabel = 'Connect to the freaking API';
+    }else{
+      alert ('>:(');
+      this.buttonLabel = 'Check Availability';
+    }
+
   }
 
 }
