@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class NavbarComponent implements OnInit {
   appName: string = 'pepito';  
   constructor() {
-    this.appName = 'Startup :D';
+    this.appName = '';
   }
   
   ngOnInit() {
