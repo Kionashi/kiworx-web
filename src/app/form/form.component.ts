@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-form',
@@ -6,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./form.component.css']
 })
 export class FormComponent implements OnInit {
-  buttonLabel = 'Check Availability';
-  constructor() { 
+  buttonLabel = 'GET Pokimen';
+  constructor(private http: HttpClient) { 
      
   }
 
@@ -15,15 +16,12 @@ export class FormComponent implements OnInit {
   }
 
   onCheckAvailability(){
-    if(this.buttonLabel === 'Check Availability'){
-
-      alert('connect to the API');
-      this.buttonLabel = 'Connect to the freaking API';
-    }else{
-      alert ('>:(');
-      this.buttonLabel = 'Check Availability';
+    if(this.buttonLabel === 'GET Pokimen'){
+      let pokeId = Math.floor(Math.random() * 151); 
+      this.http.get(`https://pokeapi.co/api/v2/pokemon/${pokeId}`).subscribe(pokemon =>{
+        alert(pokemon.name);
+      })
     }
-
   }
 
 }
