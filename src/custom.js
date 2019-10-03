@@ -4,21 +4,7 @@
             var center;
 
             function initialize() {
-                var mapOptions = {
-                    zoom: 16,
-                    center: new google.maps.LatLng(13.7567928,100.5653741),
-                    scrollwheel: false
-                };
-
-                map = new google.maps.Map(document.getElementById('google-map'),  mapOptions);
-
-                google.maps.event.addDomListener(map, 'idle', function() {
-                  calculateCenter();
-              });
-
-                google.maps.event.addDomListener(window, 'resize', function() {
-                  map.setCenter(center);
-              });
+               
             }
 
             function calculateCenter() {
